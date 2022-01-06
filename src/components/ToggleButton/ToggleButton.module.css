@@ -8,6 +8,7 @@
   outline-offset: 2px;
   border-radius: 1px;
   cursor: pointer;
+  position: relative;
   /*
     HACK: Margin on an outer bound like this is
     a little gross, but we haven't seen the tools

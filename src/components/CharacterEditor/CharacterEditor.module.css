@@ -43,23 +43,31 @@
 }
 
 .controlColumn {
+    width: 50%;
 }
 @media (max-width: 550px) {
     .characterEditor {
         padding-top: 24px;
     }
     .header {
-      width: revert;
+        width: revert;
     }
-    .header h1{
-      font-size: clamp(1.5rem, 4vw + 1rem, 3rem);
+    .header h1 {
+        font-size: clamp(1.5rem, 4vw + 1rem, 3rem);
     }
     .characterWrapper {
-      top: revert;
-      bottom: 0px;
-      left: 50%;
-      height: auto;
-      width: 300px;
-      transform: translate(-50%, -45%);
-  }
+        top: revert;
+        bottom: 0px;
+        left: 50%;
+        height: auto;
+        width: 300px;
+        transform: translate(-50%, -45%);
+        z-index: -1;
+    }
+    .controlColumn {
+        width: revert;
+        display: flex;
+        gap: 16px;
+        overflow-x: auto;
+    }
 }
